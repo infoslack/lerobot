@@ -24,6 +24,7 @@ from lerobot.types import (
 )
 
 from .batch_processor import AddBatchDimensionProcessorStep
+from .bspline_action_processor import BsplineActionResamplerStep
 from .converters import (
     batch_to_transition,
     create_transition,
@@ -122,6 +123,7 @@ __all__ = [
     "transition_to_observation",
     "transition_to_policy_action",
     "transition_to_robot_action",
+    "BsplineActionResamplerStep",
     "DeviceProcessorStep",
     "DoneProcessorStep",
     "EnvAction",
